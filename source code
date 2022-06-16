@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int n,a[100],i,sum=0;
+    float average;
+    printf("Enter number of subjects : ");
+    scanf("%d",&n);
+    printf("Enter the marks of each subject : ");
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++){
+        sum+=a[i];
+    }
+    average=(float)sum/n;
+    printf("average of all subjects : %.2f",average);
+    return 0;
+}
